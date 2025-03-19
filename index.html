@@ -3,13 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Page</title>
+    <title>Dr. Le Thi Hong Nhung - Scientific Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background: url('web3.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: black !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: auto;
+        }
+        .container {
+            display: flex;
+            max-width: 1000px;
+            width: 90%;
+            background: rgba(255, 255, 255, 0.9); /* Nền trắng mờ để đọc dễ hơn */
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            flex-wrap: wrap;
+            color: black !important;
+        }
+        .left, .right {
+            flex: 1;
+            padding: 20px;
+        }
+        .left {
+            text-align: center;
+            border-right: 2px solid rgba(0, 0, 0, 0.1);
+        }
+        img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 12px;
+            border: 4px solid black;
+            margin-bottom: 15px;
+        }
+        h1, h2 {
+            color: black !important;
+        }
+        p {
+            font-size: 1.1em;
+            color: black !important;
+        }
+        .contact a {
+            color: #ff5733;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .contact a:hover {
+            color: #c70039;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 15px;
+            font-size: 1em;
+            font-weight: bold;
+            color: white;
+            background: #ff6347;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #e55337;
+        }
+        .research-fields {
+            text-align: left;
+            margin-left: 20px;
+        }
+        .research-fields p {
+            font-style: italic;
+        }
+        .contact-section {
+            margin-bottom: 20px;
+        }
+        .contact-image {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .contact-image img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My GitHub Page!</h1>
-    <p>This is my first website hosted on GitHub Pages.</p>
-    <a href="nhunglelab.html">Go to Nhung Lab</a>
-    <br>
-    <img src="web.jpg" alt="Web Image">
+    <div class="container">
+        <div class="left">
+            <img src="web.jpg" alt="Dr. Le Thi Hong Nhung">
+            <h1>Dr. Le Thi Hong Nhung</h1>
+            <p><em>PhD in Molecular Life Science, ETH Zurich, Switzerland</em></p>
+            <h2>Research Fields</h2>
+            <div class="research-fields">
+                <p>Extrachromosomal DNA</p>
+                <p>Nanobody synthesis</p>
+                <p>BioMaterial</p>
+                <p>Botulinum toxin</p>
+                <p>Bioinformatics</p>
+            </div>
+        </div>
+        <div class="right">
+            <h2>Biography</h2>
+            <p>Dr. Le Thi Hong Nhung is a leading expert in scientific research with extensive experience in teaching and research.</p>
+            <h2>Scientific Publications</h2>
+            <p>(Updating...)</p>
+            <div class="contact-section">
+                <h2>Contact</h2>
+                <p>Email: <a href="mailto:nhungle@hus.edu.vn">nhungle@hus.edu.vn</a></p>
+                <p>Phone: (Updating...)</p>
+                <p>Address: 137T1, 334 Nguyễn Trãi St, Thanh Xuân, Hanoi</p>
+                <button class="btn" onclick="location.href='mailto:nhungle@hus.edu.vn'">Contact Now</button>
+            </div>
+            <div class="contact-image">
+                <img src="web2.jpg" alt="Additional Image">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
